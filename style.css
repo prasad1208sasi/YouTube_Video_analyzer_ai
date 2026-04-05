@@ -1,0 +1,182 @@
+
+/* Basic Reset & Body Styles */
+:root {
+    --primary-color: #0056b3; /* A nice blue for links/accents */
+    --text-color: #333;
+    --heading-color: #222;
+    --bg-color: #f9f9f9;
+    --border-color: #eee;
+    --code-bg: #eef;
+    --code-color: #555;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.site-header {
+    background-color: #fff;
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.site-header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    color: var(--heading-color);
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Article Content */
+.article-content {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+article h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+    color: var(--heading-color);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+article h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em;
+    color: var(--heading-color);
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+article p {
+    margin-bottom: 1em;
+}
+
+article ul, article ol {
+    margin-bottom: 1em;
+    padding-left: 25px;
+}
+
+article ul li, article ol li {
+    margin-bottom: 0.5em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+/* Technical Terms */
+.tech-term {
+    font-family: 'Courier New', monospace;
+    background-color: var(--code-bg);
+    color: var(--code-color);
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+/* Code Block / Napkin Math Styling */
+.code-block {
+    background-color: var(--code-bg);
+    border-left: 4px solid var(--primary-color);
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.code-block h4 {
+    font-family: 'Merriweather', serif;
+    color: var(--heading-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.code-block ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.code-block ul li {
+    margin-bottom: 8px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .site-header h1 {
+        font-size: 2em;
+    }
+
+    .article-content {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    article h2 {
+        font-size: 1.7em;
+    }
+
+    article h3 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header h1 {
+        font-size: 1.5em;
+    }
+
+    .article-content {
+        padding: 15px;
+    }
+
+    article h2 {
+        font-size: 1.5em;
+    }
+
+    article h3 {
+        font-size: 1.2em;
+    }
+}
